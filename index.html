@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Panel Informativo Transporte - Agrosuper</title>
+  <title>Panel Informativo-Transportes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -337,7 +337,7 @@
     <div class="login-box">
       <img src="logo-as-2.jpg" alt="Logo Agrosuper">
       <h2>Acceso a Proveedores</h2>
-      <p>Ingrese su código PIN para revisar horarios, cuentas, enlaces y novedades del equipo.</p>
+      <p>Por favor, ingrese su código PIN para acceder al panel informativo.</p>
       <input type="password" id="pinInput" class="pin-input" placeholder="****" maxlength="4" autocomplete="off" onkeypress="handleEnter(event)">
       <button class="btn-login" onclick="checkPin()">Ingresar</button>
       <div id="error-msg">Código PIN incorrecto. Intente nuevamente.</div>
@@ -362,18 +362,19 @@
         <div class="alert-icon">📢</div>
         <div>
           <strong>Aviso importante</strong>
-          <p>Este espacio queda visible en todo momento para publicar novedades operativas, cambios de horario, congestión en depósitos o cualquier instrucción para los transportistas.</p>
+          <p>Estimados proveedores, Recuerden que los retiros de HANSEATIC son en modalidad Manual. Favor informar siempre las asignaciones al menos dos horas habiles antes de presentarse en deposito.</p>
         </div>
       </section>
 
       <nav class="tabs" aria-label="Secciones del panel">
         <button class="tab-button active" onclick="openTab(event, 'horarios')">Horarios Depósitos</button>
+        <button class="tab-button" onclick="openTab(event, 'almacenes')">Horarios Almacenes</button>
+        <button class="tab-button" onclick="openTab(event, 'centros-carga')">Centros de carga</button>
         <button class="tab-button" onclick="openTab(event, 'cuentas')">Cuentas Depósitos</button>
         <button class="tab-button" onclick="openTab(event, 'anticipos')">Planilla Anticipos</button>
         <button class="tab-button" onclick="openTab(event, 'whatsapp')">Grupo WhatsApp</button>
         <button class="tab-button" onclick="openTab(event, 'asat')">ASAT</button>
-        <button class="tab-button" onclick="openTab(event, 'almacenes')">Horarios Almacenes</button>
-        <button class="tab-button" onclick="openTab(event, 'centros-carga')">Centros de carga</button>
+        
       </nav>
 
       <!-- Horarios Depósitos -->
@@ -412,7 +413,7 @@
         <tr><td>AGUNSA</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/Sd6BmqvujdTWBvuf9" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>21:00</td><td>08:30</td><td>18:00</td></tr>
         <tr><td>AGUNSA</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/wLkQmFZ9qy8k9Qik6" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>19:00</td><td>08:30</td><td>12:00</td></tr>
         <tr><td>SITRANS</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/UXNzt57tRBv9ximH6" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>21:00</td><td>08:30</td><td>17:00</td></tr>
-        <tr><td>SITRANS</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/Qb226G43TrKmycMEA" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>21:00</td><td>08:30</td><td>16:00</td></tr>
+        <tr><td>SITRANS</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/Qb226G43TrKmycMEA" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>18:00</td><td>08:30</td><td>13:00</td></tr>
         <tr><td>DPW - CIS</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/sCpNrLVzeMvzwjGf6" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>22:00</td><td>08:30</td><td>15:00</td></tr>
         <tr><td>CONTOPSA</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/Qb226G43TrKmycMEA" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>20:00</td><td>08:30</td><td>16:00</td></tr>
         <tr><td>CONTOPSA</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/yX5ks9kNsiAbAHmKA" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:00</td><td>22:00</td><td>08:00</td><td>18:00</td></tr>
@@ -447,37 +448,37 @@
             <tbody>
               <tr>
                 <td>MEDLOG</td>
-                <td><a class="btn-portal" href="https://portal.medlogchile.cl/#/" target="_blank" rel="noopener noreferrer">🔗 Abrir portal MEDLOG</a></td>
+                <td><a class="btn-portal" href="https://portal.medlogchile.cl/#/" target="_blank" rel="noopener noreferrer">🔗 Abrir Portal</a></td>
                 <td><div class="td-flex"><span>79.984.240-8</span><button class="copy-btn" onclick="copyText('79.984.240-8', this)" title="Copiar usuario">📋</button></div></td>
                 <td><div class="td-flex"><span class="pwd-text">************</span><button class="copy-btn" onclick="togglePassword(this, 'Agrosuper2025')" title="Mostrar/Ocultar contraseña">👁</button></div></td>
               </tr>
               <tr>
                 <td>AGUNSA (SOLEAL)</td>
-                <td><a class="btn-portal" href="https://soleal.agunsa.cl/" target="_blank" rel="noopener noreferrer">🔗 Abrir portal SOLEAL</a></td>
+                <td><a class="btn-portal" href="https://soleal.agunsa.cl/" target="_blank" rel="noopener noreferrer">🔗 Abrir Portal</a></td>
                 <td><div class="td-flex"><span>76.129.263-3</span><button class="copy-btn" onclick="copyText('76.129.263-3', this)" title="Copiar usuario">📋</button></div></td>
                 <td><div class="td-flex"><span class="pwd-text">************</span><button class="copy-btn" onclick="togglePassword(this, 'Agrosuper2026')" title="Mostrar/Ocultar contraseña">👁</button></div></td>
               </tr>
               <tr>
                 <td>DYC</td>
-                <td><a class="btn-portal" href="https://online.dycsa.cl/loginpr.php" target="_blank" rel="noopener noreferrer">🔗 Abrir portal DYC</a></td>
+                <td><a class="btn-portal" href="https://online.dycsa.cl/loginpr.php" target="_blank" rel="noopener noreferrer">🔗 Abrir Portal</a></td>
                 <td><div class="td-flex"><span>AGROSUPER</span><button class="copy-btn" onclick="copyText('AGROSUPER', this)" title="Copiar usuario">📋</button></div></td>
                 <td><div class="td-flex"><span class="pwd-text">************</span><button class="copy-btn" onclick="togglePassword(this, 'Agrosuper2025')" title="Mostrar/Ocultar contraseña">👁</button></div></td>
               </tr>
               <tr>
                 <td>CONTOPSA</td>
-                <td><a class="btn-portal" href="https://portalclientes.contopsa.cl/#!/login" target="_blank" rel="noopener noreferrer">🔗 Abrir portal Contopsa</a></td>
+                <td><a class="btn-portal" href="https://portalclientes.contopsa.cl/#!/login" target="_blank" rel="noopener noreferrer">🔗 Abrir Portal</a></td>
                 <td><div class="td-flex"><span>ccamposa@agrosuper.com</span><button class="copy-btn" onclick="copyText('ccamposa@agrosuper.com', this)" title="Copiar usuario">📋</button></div></td>
                 <td><div class="td-flex"><span class="pwd-text">************</span><button class="copy-btn" onclick="togglePassword(this, 'Camposa2025')" title="Mostrar/Ocultar contraseña">👁</button></div></td>
               </tr>
               <tr>
                 <td>SITRANS</td>
-                <td><a class="btn-portal" href="https://gateway.sitrans.cl/SitransGateway.Portal/Account/Login?ReturnUrl=%2FSitransGateway.Portal%2FTransportista" target="_blank" rel="noopener noreferrer">🔗 Abrir portal Sitrans</a></td>
+                <td><a class="btn-portal" href="https://gateway.sitrans.cl/SitransGateway.Portal/Account/Login?ReturnUrl=%2FSitransGateway.Portal%2FTransportista" target="_blank" rel="noopener noreferrer">🔗 Abrir Portal</a></td>
                 <td><div class="td-flex"><span>195774404</span><button class="copy-btn" onclick="copyText('195774404', this)" title="Copiar usuario">📋</button></div></td>
                 <td><div class="td-flex"><span class="pwd-text">************</span><button class="copy-btn" onclick="togglePassword(this, 'Agrosuper2026')" title="Mostrar/Ocultar contraseña">👁</button></div></td>
               </tr>
               <tr>
                 <td>HANSEATIC</td>
-                <td><a class="btn-portal" href="https://bcd.hgtlatam.com/transdepot.portal/#!/login" target="_blank" rel="noopener noreferrer">🔗 Abrir portal Hanseatic</a></td>
+                <td><a class="btn-portal" href="https://bcd.hgtlatam.com/transdepot.portal/#!/login" target="_blank" rel="noopener noreferrer">🔗 Abrir Portal</a></td>
                 <td><div class="td-flex"><span>agrosuper</span><button class="copy-btn" onclick="copyText('agrosuper', this)" title="Copiar usuario">📋</button></div></td>
                 <td><div class="td-flex"><span class="pwd-text">************</span><button class="copy-btn" onclick="togglePassword(this, 'Agrosuper2026')" title="Mostrar/Ocultar contraseña">👁</button></div></td>
               </tr>
@@ -523,7 +524,7 @@
 
         <a href="https://chat.whatsapp.com/Elwf629eoItJqGZuDiig33"
            target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
-          Unirse al grupo de WhatsApp 💬
+          Unirse al grupo de WhatsApp
         </a>
       </section>
 
@@ -549,7 +550,7 @@
             <tbody>
               <tr>
                 <td>Ubicación ASAT</td>
-                <td><a class="gps-inline" href="https://maps.app.goo.gl/36EZSxqBmdrpeyDr9" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td>
+                <td><a class="gps-inline" href="https://maps.app.goo.gl/36EZSxqBmdrpeyDr9" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td>
               </tr>
               <tr>
                 <td>Guía de uso</td>
@@ -601,13 +602,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>ZEAL RDA</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/GaAhcCm4sWYnVbsV8" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td><td>08:00</td><td>09:00</td><td>09:00</td><td>20:00</td></tr>
-        <tr><td>HANSEATIC</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/2MydnPMGDAe51H5Q6" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td><td>08:00</td><td>22:30</td><td>09:00</td><td>15:00</td></tr>
-        <tr><td>HANSEATIC</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/MV7iamca8ih1UYZw7" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td><td>08:00</td><td>22:30</td><td>09:00</td><td>15:00</td></tr>
-        <tr><td>CLEP</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/5rshzgZJj3qHBbXe9" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td><td>08:00</td><td>23:00</td><td>09:00</td><td>21:00</td></tr>
-        <tr><td>FRIOMOR</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/WYLqVpCf5ZZv4DC98" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td><td>08:00</td><td>21:00</td><td>09:00</td><td>14:00</td></tr>
-        <tr><td>PUERTO COLUMBO</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/4yMPBFwUQ1mxLvNg7" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td><td>08:30</td><td>21:00</td><td>09:00</td><td>15:30</td></tr>
-        <tr><td>PUERTO COLUMBO</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/9iyDF1zqTuU2XA1i8" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td><td>08:30</td><td>21:00</td><td>09:00</td><td>15:30</td></tr>
+        <tr><td>ZEAL RDA</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/GaAhcCm4sWYnVbsV8" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:00</td><td>09:00</td><td>09:00</td><td>20:00</td></tr>
+        <tr><td>HANSEATIC</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/2MydnPMGDAe51H5Q6" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:00</td><td>22:30</td><td>09:00</td><td>15:00</td></tr>
+        <tr><td>HANSEATIC</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/MV7iamca8ih1UYZw7" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:00</td><td>22:30</td><td>09:00</td><td>15:00</td></tr>
+        <tr><td>CLEP</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/5rshzgZJj3qHBbXe9" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:00</td><td>23:00</td><td>09:00</td><td>21:00</td></tr>
+        <tr><td>FRIOMOR</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/WYLqVpCf5ZZv4DC98" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:00</td><td>21:00</td><td>09:00</td><td>14:00</td></tr>
+        <tr><td>PUERTO COLUMBO</td><td>SAN ANTONIO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/4yMPBFwUQ1mxLvNg7" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>21:00</td><td>09:00</td><td>15:30</td></tr>
+        <tr><td>PUERTO COLUMBO</td><td>VALPARAISO</td><td><a class="gps-inline" href="https://maps.app.goo.gl/9iyDF1zqTuU2XA1i8" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td><td>08:30</td><td>21:00</td><td>09:00</td><td>15:30</td></tr>
       </tbody>
     </table>
   </div>
@@ -632,14 +633,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>FAENADORA LO MIRANDA</td><td>LMC / LMA</td><td><a class="gps-inline" href="https://maps.app.goo.gl/4qqjL3MkRj9bXGXN7" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td></tr>
-              <tr><td>FAENADORA EL MILAGRO</td><td>EM</td><td><a class="gps-inline" href="https://maps.app.goo.gl/enMdh4xiUkwdpehZ7" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td></tr>
-              <tr><td>FAENADORA SAN VICENTE</td><td>SV</td><td><a class="gps-inline" href="https://maps.app.goo.gl/byEJGrmErwajBjTP8" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td></tr>
-              <tr><td>FAENADORA ROSARIO</td><td>RS</td><td><a class="gps-inline" href="https://maps.app.goo.gl/WryxU3wiAGqitPEt5" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td></tr>
-              <tr><td>SOPRAVAL</td><td>SP</td><td><a class="gps-inline" href="https://maps.app.goo.gl/4n22Per7hUhC8gVj9" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td></tr>
-              <tr><td>FRIGORIFICO FRIOFORT</td><td>FR</td><td><a class="gps-inline" href="https://maps.app.goo.gl/DS7xZDPx6RL8HGXh8" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td></tr>
-              <tr><td>FRIGORIFICO PRECISA</td><td>PR</td><td><a class="gps-inline" href="https://maps.app.goo.gl/fR3QhkDMbQ4NT9hV8" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td></tr>
-              <tr><td>FRIGORIFICO ICESTAR</td><td>IC</td><td><a class="gps-inline" href="https://maps.app.goo.gl/EVUX23kktvnasEmL6" target="_blank" rel="noopener noreferrer">📍 Abrir ubicación</a></td></tr>
+              <tr><td>FAENADORA LO MIRANDA</td><td>LMC / LMA</td><td><a class="gps-inline" href="https://maps.app.goo.gl/4qqjL3MkRj9bXGXN7" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td></tr>
+              <tr><td>FAENADORA EL MILAGRO</td><td>EM</td><td><a class="gps-inline" href="https://maps.app.goo.gl/enMdh4xiUkwdpehZ7" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td></tr>
+              <tr><td>FAENADORA SAN VICENTE</td><td>SV</td><td><a class="gps-inline" href="https://maps.app.goo.gl/byEJGrmErwajBjTP8" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td></tr>
+              <tr><td>FAENADORA ROSARIO</td><td>RS</td><td><a class="gps-inline" href="https://maps.app.goo.gl/WryxU3wiAGqitPEt5" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td></tr>
+              <tr><td>SOPRAVAL</td><td>SP</td><td><a class="gps-inline" href="https://maps.app.goo.gl/4n22Per7hUhC8gVj9" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td></tr>
+              <tr><td>FRIGORIFICO FRIOFORT</td><td>FR</td><td><a class="gps-inline" href="https://maps.app.goo.gl/DS7xZDPx6RL8HGXh8" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td></tr>
+              <tr><td>FRIGORIFICO PRECISA</td><td>PR</td><td><a class="gps-inline" href="https://maps.app.goo.gl/fR3QhkDMbQ4NT9hV8" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td></tr>
+              <tr><td>FRIGORIFICO ICESTAR</td><td>IC</td><td><a class="gps-inline" href="https://maps.app.goo.gl/EVUX23kktvnasEmL6" target="_blank" rel="noopener noreferrer">📍 Abrir GPS</a></td></tr>
             </tbody>
           </table>
         </div>
@@ -648,7 +649,7 @@
   </div>
 
   <script>
-    const PIN_CORRECTO = '1234';
+    const PIN_CORRECTO = '0990';
 
     function checkPin() {
       const input = document.getElementById('pinInput').value;
